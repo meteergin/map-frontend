@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppComponent } from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
@@ -15,13 +15,10 @@ import { SearchFormComponent } from './search-form/search-form.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    GoogleMapsModule
+    GoogleMapsModule,
   ],
-  declarations: [
-    AppComponent,
-    SearchFormComponent
-  ],
+  declarations: [AppComponent, SearchFormComponent],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
