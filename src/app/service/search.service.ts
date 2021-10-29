@@ -17,14 +17,8 @@ export class SearchService {
       .set('Content-Type', 'application/json')
       .set('Cache-Control', 'no-cache');
     const options = { headers: httpHeaders, withCredentials: true };
-    return this.http.post<any[]>(
-      'http://localhost:8070/search/nearbysearch',
-      {
-        latitude,
-        longitude,
-        radius,
-      },
-      options
+    return this.http.get<any[]>(
+      'http://localhost:8070/search/nearbysearch?latitude=' + latitude +'&longitude=' + longitude + '&radius=' + radius,
     );
   }
 }

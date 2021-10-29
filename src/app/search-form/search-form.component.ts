@@ -1,4 +1,3 @@
-import { PathLocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Search } from '../model/Search';
@@ -13,7 +12,7 @@ import { SearchService } from '../service/search.service';
 export class SearchFormComponent implements OnInit {
 
   searchForm!: FormGroup;
-  //Center of İstanbul
+  // Center of İstanbul
   model = new Search(41.015137, 28.97953, 200);
   submitted = false;
   searchResultList: SearchResult[] = [];
@@ -42,7 +41,7 @@ export class SearchFormComponent implements OnInit {
       radius: '',
     });
 
-    //Center of New York
+    // Center of New York
     this.viewOnMap(40.73061, -73.935242);
   }
 
